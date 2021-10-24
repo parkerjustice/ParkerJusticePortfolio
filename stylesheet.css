@@ -89,7 +89,7 @@ body {
     margin-left: 25px;
 }
 .content {
-    width: 75%;
+    width: 100%;
     display: inline-block;
     margin-left: 20px;
     flex: 1;
@@ -133,3 +133,70 @@ body {
 .about-me img, .Horiseon img, .Run-Buddy img {
     max-height: 200px;
 }
+
+/* End Hero */
+
+/* Contact */
+
+.contact {
+    padding: 20px 35px;
+    font-family: Georgia, serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 9999;
+}
+.contact h3 {
+    display: inline-block;
+    font-size: 20px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact div ul {
+    list-style-type: none;
+}
+.contact div ul {
+    list-style-type: none;
+}
+.contact div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.contact a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.contact nav {
+    margin: 0px 0;
+}
+.contact nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.contact nav ul li a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.contact nav ul li a:hover {
+    text-shadow: none;
+}
+
+ /* End Contact Section */
+
+ /* Footer */
+
+.footer {
+    padding: 30px;
+    clear: both;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 20px;
+}
+
+/* End Footer */
