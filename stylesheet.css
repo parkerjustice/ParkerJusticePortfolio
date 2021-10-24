@@ -1,15 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --primary-color: #f3c192;
+    --secondary-color: #176862;
+}
+
+body {
+    background-color: #f0a966;
+}
+
+/* Header */
+
+.header {
+    padding: 20px 35px;
+    font-family: Georgia, serif;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    z-index: 9999;
+}
+.header h1 {
+    display: inline-block;
+    font-size: 48px;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header div {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: Sans-serif;
+    font-size: 20px;
+}
+.header div ul {
+    list-style-type: none;
+}
+.header div ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+.header a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}
+.header nav {
+    margin: 0px 0;
+}
+.header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+.header nav ul li a {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+.header nav ul li a:hover {
+    text-shadow: none;
+}
+
+/* Ending Header */
+
+/* Hero */
+
+.hero {
+    height: 500px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("./photos/portfolioheader.JPG");
+    background-size: cover;
+    background-position: center;
+}
+.hero p {
+    font-size: 16px;
+}
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
+.float-right {
+    float: right;
+    margin-left: 25px;
+}
+.content {
+    width: 75%;
+    display: inline-block;
+    margin-left: 20px;
+    flex: 1;
+}
 /* Container holding the image and the text */
 .container {
     position: relative;
-  }
+}
   
-  /* Bottom right text */
-  .text-block {
-    position: absolute;
+/* Bottom right text */
+.text-block {
+    position: relative;
     bottom: 20px;
     right: 20px;
-    background-color: black;
+    background-color: #1768639c;
     color: white;
     padding-left: 20px;
     padding-right: 20px;
-  }
+}
+.work {
+    padding: 50px;
+    height: 0px;
+    font-family: Sans-serif;
+    background-color: #f3c192;
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1
+}
+.about-me, .Horiseon, .Run-Buddy, .contact {
+    margin-bottom: 20px;
+    padding: 50px;
+    height: 300px;
+    font-family: Sans-serif;
+    background-color: #f3c192;
+    color: var(--secondary-color);
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex: 1
+}
+.about-me img, .Horiseon img, .Run-Buddy img {
+    max-height: 200px;
+}
